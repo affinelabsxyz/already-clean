@@ -1,7 +1,7 @@
 # already-clean
 
 Code, pre-registrations and results behind the Affine Labs note
-[We tested Nick Cammarata's "Neural networks are already clean" on modern models](https://affinelabs.xyz/research/already-clean/).
+[Already clean? Testing Nick Cammarata's essay and Leo Gao's reply on modern models](https://affinelabs.xyz/research/already-clean/).
 
 **The question.** If you edit one MLP unit, does a cleaner unit change less of everything else?
 
@@ -84,12 +84,14 @@ collateral, intended effect), if you want to plot them yourself.
    ```
    bash scripts/run_small.sh        # CLEANSPILL, about 10–17 minutes per model on an RTX 5070 Ti
    bash scripts/run_quietleak.sh    # QUIETLEAK, about 40 minutes in total; needs CLEANSPILL's results
-   RUNS_DIR=/path/to/runs_rl bash scripts/run_rlleak.sh   # RLLEAK, needs the LoRA adapters (below)
+   RUNS_DIR=runs_rl bash scripts/run_rlleak.sh   # RLLEAK, needs the LoRA adapters (below)
    ```
    Set `PYTHON` to choose the interpreter and `POOLS_DIR` if the pools are not in `data/pools`.
 
-RLLEAK needs the 19 LoRA adapters (612 MB), one folder per run with `adapter/` inside. They are not in this
-repository. Email us if you want them.
+RLLEAK needs the 19 LoRA adapters. They are too large for git, so they are in a
+[Google Drive folder](https://drive.google.com/drive/folders/1BSMQwRCX6Xy6_q8aFueuQQwYCSoPxqKG?usp=sharing):
+`already-clean_rlleak_adapters.zip` (641 MB, sha256 `d93de611…`). Unzip it in the repository root to get
+`runs_rl/<run>/adapter/`. `data/adapters_SHA256SUMS.txt` lists the hash of every file inside.
 
 ## Files
 
@@ -100,11 +102,12 @@ repository. Email us if you want them.
 | `results/` | Per-model results and the three summaries |
 | `claims/` | The write-up of each study's result |
 | `data/curate.py` | Rebuilds the text pools from public datasets |
+| `data/adapters_SHA256SUMS.txt` | Hashes of the RLLEAK adapter files in the Drive zip |
 
 ## Not included
 
 - The text pools themselves: their source datasets have their own licences. `data/curate.py` rebuilds them.
-- The LoRA adapters for RLLEAK (612 MB). Available on request.
+- The LoRA adapters for RLLEAK: in the Google Drive folder above, not in git.
 - Smoke outputs and run logs.
 
 ## Licence
