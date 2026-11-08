@@ -1,7 +1,7 @@
 # already-clean
 
 Code, pre-registrations and results behind the Affine Labs note
-[Already clean? Testing Nick Cammarata's essay and Leo Gao's reply on modern models](https://affinelabs.xyz/research/already-clean/).
+[We tested Nick Cammarata's "Neural networks are already clean" on modern models](https://affinelabs.xyz/research/already-clean/).
 
 **The question.** If you edit one MLP unit, does a cleaner unit change less of everything else?
 
