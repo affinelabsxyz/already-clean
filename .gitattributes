@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Keep exact bytes: frozen files were hashed as they are (some CRLF, some LF), and results record hashes of each other.
+frozen/** -text
+results/** -text

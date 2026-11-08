@@ -1,0 +1,9 @@
+# sha256 of the first 4,000 lines of each curated pool.jsonl (PR 3 curate.py, seed 0) read by scripts/cleanspill/*_probe.py on Seungju's machine, 2026-10-22.
+# Lab: regenerate the pools, take head -n 4000 of each, and compare. A mismatch is fine to run with, but please note it in the tier's claims.
+3cae43027b5478f428ab73b20e4989d10826319c06ff79b69c9ab2e1f3d4b4b0 *code/pool.jsonl
+5c2ef087789b8be75f199d9389a1cfc6e91b953360c66501746bb2e1bbd0ad8e *finance/pool.jsonl
+84a7c42a2683c6e45161e0a14dc7b20d7aa0028f560413a91cd88abd27893fe9 *if/pool.jsonl
+af06816a229d6b5e9e238441340957942cef3d0ed9ecddf42611fc600072009d *logic/pool.jsonl
+e1b4be4d66fb8e361b14f17afc666516b4983c49576ec5ddbd54452921282156 *math_easy/pool.jsonl
+f71f5accf85b2b8c01bcbac2fd76a102d5e9d597da9adb216a2e6577678d7554 *math_hard/pool.jsonl
+a944d3dbb9c9b9a36e8481b477e3a358102d43fc7e94f15111f3c0f53d63e336 *medical/pool.jsonl

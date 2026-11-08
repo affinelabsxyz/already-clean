@@ -1,0 +1,7 @@
+# Tested with these versions on one RTX 5070 Ti (CUDA 12.8 build of torch), Windows.
+torch>=2.11
+transformers>=5.20
+numpy>=2.5
+datasets>=5.1
+peft>=0.21            # RLLEAK only (loads the LoRA adapters)
+reasoning_gym>=0.1.19 # data/curate.py only (the logic text pool)
